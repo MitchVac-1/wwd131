@@ -1,0 +1,71 @@
+/* Page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #f2f2f2;
+}
+
+.page {
+  width: 700px;
+  margin: 40px auto;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.page-header h2 {
+  font-size: 18px;
+  margin: 8px 0 0;
+  color: #0066cc;                 /* BYU blue */
+  padding-bottom: 6px;
+  border-bottom: 1px solid #0066cc; /* blue underline */
+  display: inline-block;          /* underline matches text width */
+}
+
+/* Content */
+.content p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.content .italic {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.content ol {
+  margin: 0 0 0 22px;
+  padding: 0;
+}
+
+.content ol li {
+  margin-bottom: 10px;
+}
+
+/* Logo image */
+.logo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 120px;   /* adjust if needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
