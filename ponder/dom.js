@@ -24,7 +24,7 @@ para.classList.add('background');
 
 const image = document.querySelector('img');
 
-image.setAttribute('src',images/new_logo.png )
+
 const html = document.querySelector('#html');
 const css = document.querySelector('#css');
 const js = document.querySelector('#js');
