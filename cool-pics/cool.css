@@ -24,12 +24,8 @@ header h1 {
 .menu-btn {
   background-color: #2f7fc1;
   color: white;
-  border: 2px solid white;
-  padding: 6px 20px;
   font-size: 1rem;
   cursor: pointer;
-  border-radius: 4px;
-  margin-bottom: 6px;
 }
 
 .nav-links {
@@ -43,9 +39,6 @@ header h1 {
   font-size: 0.9rem;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
 
 main {
   padding: 16px;
