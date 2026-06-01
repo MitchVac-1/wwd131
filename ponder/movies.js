@@ -1,47 +1,46 @@
 const movies = [
   {
-    title: "Spider-Man: Into the Spider-Verse",
-    date: "Dec 14, 2018",
-    description: "Miles Morales becomes the Spider-Man of his reality and crosses paths with others from the multiverse.",
-    imgSrc: "https://wddbyui.github.io/wdd131/images/spiderman.png",
-    imgAlt: "Miles Morales swinging through the city",
-    ages: "10+",
-    genre: "Action/Adventure",
+    title: "Diary of a Wimpy Kid",
+    date: "April 1, 2007",
+    description: "Greg Heffley begins his middle school journey, documenting his awkward, hilarious, and relatable experiences.",
+    imgSrc: "wimpy_kid.webp",
+    imgAlt: "Diary of a Wimpy Kid book cover",
+    ages: "8+",
+    genre: "Humor/Children's Fiction",
     stars: "⭐⭐⭐⭐⭐"
   },
   {
-    title: "The Other Side of Heaven",
-    date: "December 14, 2001",
-    description: "Based on the true story of Elder John H. Groberg, a missionary in Tonga in the 1950s, this film tells a powerful story of faith, hardship, and miracles.",
-    imgSrc: "https://wddbyui.github.io/wdd131/images/heaven.png",
-    imgAlt: "Poster for The Other Side of Heaven showing a missionary and tropical landscape",
-    ages: "10+",
-    genre: "Drama/Religious",
+    title: "Diary of a Wimpy Kid: Rodrick Rules",
+    date: "February 1, 2008",
+    description: "Greg deals with sibling rivalry as Rodrick makes his life miserable, leading to chaos and family drama.",
+    imgSrc: "wimpy_kid2.webp",
+    imgAlt: "Rodrick Rules book cover",
+    ages: "8+",
+    genre: "Humor/Children's Fiction",
     stars: "⭐⭐⭐⭐"
   },
   {
-    title: "Luca",
-    date: "June 18, 2021",
-    description: "Two sea monsters experience a life-changing summer on the Italian Riviera.",
-    imgSrc: "https://wddbyui.github.io/wdd131/images/luca.png",
-    imgAlt: "Luca and Alberto standing on the beach",
-    ages: "6+",
-    genre: "Family/Fantasy",
+    title: "Diary of a Wimpy Kid: The Last Straw",
+    date: "January 13, 2009",
+    description: "Greg’s dad threatens military school unless Greg toughens up, pushing him into a series of hilarious attempts at self‑improvement.",
+    imgSrc: "diaryofakid.webp",
+    imgAlt: "The Last Straw book cover",
+    ages: "8+",
+    genre: "Humor/Children's Fiction",
     stars: "⭐⭐⭐⭐"
   },
   {
-    title: "17 Miracles",
-    date: "June 3, 2011",
-    description: "A moving depiction of the Willie Handcart Company's journey west in 1856, focusing on the miraculous events that helped early pioneers survive one of the harshest migrations in history.",
-    imgSrc: "https://wddbyui.github.io/wdd131/images/miracles.jpg",
-    imgAlt: "Movie poster for 17 Miracles showing handcart pioneers walking through snow",
-    ages: "12+",
-    genre: "Historical/Religious",
-    stars: "⭐⭐⭐⭐"
+    title: "Diary of a Wimpy Kid: Dog Days",
+    date: "October 12, 2009",
+    description: "Greg wants a lazy summer indoors, but his mom forces him into outdoor activities, family drama, and embarrassing moments.",
+    imgSrc: "dogdays.webp",
+    imgAlt: "Dog Days book cover",
+    ages: "8+",
+    genre: "Humor/Children's Fiction",
+    stars: "⭐⭐⭐⭐⭐"
   }
 ];
 
-// FIXED selector — must match your HTML ID
 const movieList = document.querySelector('#movie-list');
 
 movies.forEach(movie => {
