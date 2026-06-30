@@ -1,4 +1,3 @@
-
 const hikes = [
   {
     name: "Bechler Falls",
@@ -71,9 +70,6 @@ const hikes = [
     trailhead: [43.78555, -111.98996]
   }
 ];
-                
-
-
 
 function search() {
 
@@ -108,7 +104,7 @@ function search() {
 
 let hikeContainer = document.querySelector('#hike-container');
 let input = document.querySelector('#search');
-let button = document.querySelector('button');
+let button = document.querySelector('#search-term');
 
 button.addEventListener('click', search);
 
@@ -121,7 +117,6 @@ function handleEnter(event) {
 }
 
 let randomNum = Math.floor(Math.random() * hikes.length);
-console.log(randomNum);
 
 function tagTemplate(tags) {
     return tags.map((tag)=> `<button>${tag}</button>`).join(' ');
@@ -146,6 +141,7 @@ function difficultyTemplate(rating) {
 
 function hikesTemplate(hike) {
     return `<div class="hike-card">
+  <img src="${hike.imgSrc}" alt="${hike.imgAlt}" loading="lazy">
   <div class="hike-content">
     <h2>${hike.name}</h2>
     <div class="hike-tags">
@@ -167,4 +163,3 @@ function init() {
 }
 
 init();
-                
