@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Project Overview</title>
+  
+</head>
+<body>
+
+    <h1>Rock Paper Scissors Project Overview</h1>
+    <img src="wireframe.png" alt="Rock Paper Scissors Wireframe Design" class="wireframe-img">
+
+    <h2>Purpose and Audience</h2>
+    <p>
+        My site is going to be mainly about a rock, paper, scissors game. The user will be able to select their choice by clicking on one of the buttons representing rock, paper, or scissors. The computer will randomly select its choice, and the result of the game will be displayed to the user.
+    </p>
+
+    <h2>Description of the Dynamic Elements</h2>
+    <p>
+        JavaScript will handle all game logic and dynamic behavior on the site. When the user clicks Rock, Paper, or Scissors, JavaScript will randomly generate the computer’s choice, compare the two selections, and display the result instantly without reloading the page. Additional dynamic elements include updating the score, highlighting the user’s choice, and showing win/lose/tie messages that change based on each round.
+    </p>
+
+    <h2>Pseudocode</h2>
+    <pre>
+DEFINE choices array: ["rock", "paper", "scissors"]
+
+GET reference to all choice buttons
+GET reference to result display area
+GET reference to score display (optional)
+
+FOR each button:
+    WHEN the button is clicked:
+        SET playerChoice to the button's data value
+        GENERATE computerChoice randomly from choices array
+
+        IF playerChoice equals computerChoice:
+            result = "Tie"
+        ELSE IF playerChoice beats computerChoice:
+            result = "Player wins"
+        ELSE:
+            result = "Computer wins"
+
+        DISPLAY playerChoice, computerChoice, and result
+        UPDATE score if using a scoreboard
+    </pre>
+
+</body>
+</html>
