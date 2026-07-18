@@ -24,18 +24,18 @@ let game = {
         console.log("Updating scores… Winner was:", winner);
 
         if (winner === "player") {
-            this.player++;
+            game.player++;
         } else if (winner === "computer") {
-            this.computer++;
+            game.computer++;
         }
 
-        console.log("New scores → Player:", this.player, "Gladiator:", this.computer);
+        console.log("New scores  Player:", game.player, "Gladiator:", game.computer);
 
-        playerScore.textContent = this.player;
-        computerScore.textContent = this.computer;
+        playerScore.textContent = game.player;
+        computerScore.textContent = game.computer;
     },
 
-    // Saves each round into the history array 
+    // Saves each round into the history array (I am not even sure if this is working, I tried and it logs it but I could not update the html.)
     recordRound: function (player, computer, winner) {
 
         console.log("Recording round:", { player, computer, winner });
@@ -47,9 +47,9 @@ let game = {
         };
 
         this.history.push(round);
-        renderHistory(this.history); //This should update the history log yet it does not. Fix if you have time.
+        renderHistory(game.history); //This should update the history log . Fix if time time.
 
-        console.log("Full history now:", this.history);
+        console.log("Full history now:", game.history);
 
     
     }
@@ -124,7 +124,7 @@ function playRound(playerChoice) {
     roundText.textContent =
         `You chose ${moveInfo[playerChoice]}. Gladiator chose ${moveInfo[computerChoice]}.`;
 
-    // Winner message
+    // Winner (hopefully you!) message
     const messages = {
         player: "You win the round!",
         computer: "Gladiator wins the round.",
@@ -149,7 +149,7 @@ buttons.forEach(button => {
 
 
 
-// Resets the entire game back to zero
+// Resets the entire game back to zero and sister anderson can try to defeat the gladiator again (or the TA, whoever is grading this)
 resetBtn.addEventListener("click", function () {
 
     console.log("Resetting game");
