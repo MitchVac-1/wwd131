@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Parchment Blade Game</title>
+    <link rel="stylesheet" href="rock_paper.css">
+    <script src="rock_paper.js" defer></script>
+</head>
+<body>
+
+    <h1>Stone Parchment Blade</h1>
+    <p class="instructions">
+        Choose Stone, Parchment, or Blade to play against the Gladiator.
+    </p>
+
+    <img src="Stone.png"
+         alt="Hands playing stone parchment blade"
+         class="game-img">
+
+    <div class="score-box">
+        <p>You: <span id="playerScore">0</span></p>
+        <p>Gladiator: <span id="computerScore">0</span></p>
+    </div>
+
+    <div class="buttons">
+        <button class="choice" data-move="stone">Stone</button>
+        <button class="choice" data-move="parchment">Parchment</button>
+        <button class="choice" data-move="blade">Blade</button>
+    </div>
+
+    <div class="results">
+        <p id="roundText">Click the cool buttons to start</p>
+        <p id="winnerText"></p>
+    </div>
+
+ 
+    <h2>Battle History (It does not work)</h2>
+    <ul id="historyLog"></ul>
+
+    <button id="resetGame" class="reset-btn">Reset Game</button>
+
+</body>
+</html>
